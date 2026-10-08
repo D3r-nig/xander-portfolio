@@ -875,11 +875,11 @@ footer a {
     }
 
     .hero-copy {
-        order: 1
+        order: 0
     }
 
     .hero-visual {
-        order: 2;
+        order: -1;
         margin-top: 25px
     }
 
