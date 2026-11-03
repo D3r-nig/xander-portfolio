@@ -1,0 +1,32 @@
+:root {
+  --ink: #f4f1eb;
+  --paper: #0d0d0d;
+  --muted: #8c8a84;
+  --line: rgba(244, 241, 235, .16);
+}
+
+body { background: var(--paper); color: var(--ink); }
+.site-header { background: rgba(13, 13, 13, .9); }
+.brand-mark { background: var(--acid); color: #0d0d0d; }
+.hero { background-image: linear-gradient(rgba(244, 241, 235, .055) 1px, transparent 1px), linear-gradient(90deg, rgba(244, 241, 235, .055) 1px, transparent 1px); }
+.hero-card { background: #181818; color: var(--ink); box-shadow: 18px 22px 0 rgba(255, 92, 132, .72); }
+.floating-note { color: #0d0d0d; }
+.button-primary { background: var(--ink); color: #0d0d0d; }
+.button-primary:hover { background: var(--acid); color: #0d0d0d; }
+.about-aside { border-color: var(--ink); }
+.work { background: #181818; }
+.work .section-heading > p, .work .project-info p { color: #a19e96; }
+.project-card { background: #111111; border-color: var(--line); }
+.project-card:hover { box-shadow: 8px 9px 0 var(--acid); }
+.project-info .tags span { color: #a19e96; }
+.arrow-button { border-color: var(--ink); }
+.skills { background: #050505; color: var(--ink); }
+.skills h2, .skills li { color: var(--ink); }
+.cert { background: var(--acid); color: #0d0d0d; }
+.contact { background: var(--pink); color: #0d0d0d; }
+footer { background: #050505; color: var(--ink); }
+.desktop-nav.mobile-open { background: #0d0d0d; }
+
+@media (max-width: 850px) {
+  .desktop-nav.mobile-open { border-color: var(--line); }
+}

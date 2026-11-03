@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+@import './portfolio.css';
+@import './dark-theme.css';
+@import './professional-theme.css';
+@import './project-admin.css';
+
+@source '../js/**/*.jsx';
+@source '../../resources/views/**/*.blade.php';

@@ -1,0 +1,312 @@
+.project-admin-shell {
+    width: min(1280px, 100%);
+    min-height: 68vh;
+    margin: 0 auto;
+    padding: clamp(48px, 8vw, 104px) clamp(20px, 5vw, 72px) clamp(72px, 10vw, 130px);
+}
+
+.project-admin-title {
+    margin: 8px 0 10px;
+    color: var(--ink);
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1;
+    letter-spacing: -.06em;
+}
+
+.project-admin-intro {
+    max-width: 550px;
+    margin: 0;
+    color: #aab7ca;
+    line-height: 1.7;
+}
+
+.project-admin-page-header {
+    max-width: 1200px;
+    margin: 0 auto 24px;
+    padding: 0;
+}
+
+.project-admin-page-header .text-link {
+    white-space: nowrap;
+}
+
+.project-admin-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch;
+}
+
+.project-admin-grid .project-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.project-admin-grid .project-info {
+    flex: 1;
+}
+
+.project-admin-grid .project-visual {
+    height: clamp(210px, 28vw, 340px);
+}
+
+.project-admin-grid .project-actions {
+    margin-top: auto;
+}
+
+.project-success {
+    margin: 0;
+    padding: 13px 16px;
+    border: 1px solid rgba(103, 232, 165, .35);
+    background: rgba(103, 232, 165, .08);
+    color: #9cf2c3;
+    font-family: var(--mono);
+    font-size: 13px;
+}
+
+.project-empty-state {
+    display: grid;
+    justify-items: start;
+    gap: 12px;
+    padding: clamp(32px, 6vw, 68px);
+    border: 1px dashed var(--line);
+    background: rgba(255, 255, 255, .025);
+}
+
+.project-empty-state h2,
+.project-empty-state p {
+    margin: 0;
+}
+
+.project-empty-state h2 {
+    font-size: clamp(28px, 4vw, 42px);
+}
+
+.project-empty-state p {
+    max-width: 480px;
+    color: #aab7ca;
+    line-height: 1.6;
+}
+
+.project-editor-page {
+    margin-top: 0;
+    padding: clamp(22px, 4vw, 42px);
+    background: linear-gradient(145deg, rgba(24, 36, 58, .94), rgba(12, 20, 34, .94));
+    border-color: rgba(125, 211, 252, .16);
+    border-radius: 14px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .24);
+}
+
+.project-editor-page h2 {
+    margin: 8px 0 0;
+    color: var(--ink);
+    font-size: clamp(23px, 3vw, 31px);
+    letter-spacing: -.04em;
+}
+
+.project-editor-page .project-form {
+    gap: 22px;
+}
+
+.project-editor-page .project-form-grid {
+    gap: 18px;
+}
+
+.project-input-label {
+    display: grid;
+    align-content: start;
+    gap: 9px;
+    color: #dce8f7;
+    font-family: var(--mono);
+    font-size: 12px;
+}
+
+.project-input-label span small {
+    display: block;
+    margin-top: 4px;
+    color: #8d9ab0;
+    font-size: 10px;
+}
+
+.project-input-label input,
+.project-input-label textarea {
+    min-height: 48px;
+    border-color: rgba(200, 220, 245, .18);
+    border-radius: 7px;
+    background: rgba(7, 15, 28, .72);
+    color: #f0f6ff;
+    font-family: var(--sans);
+    font-size: 14px;
+    transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.project-input-label textarea {
+    min-height: 130px;
+    line-height: 1.6;
+}
+
+.project-input-label input::placeholder,
+.project-input-label textarea::placeholder {
+    color: #74839a;
+}
+
+.project-input-label input:focus,
+.project-input-label textarea:focus {
+    outline: none;
+    border-color: var(--acid);
+    background: rgba(7, 15, 28, .92);
+    box-shadow: 0 0 0 3px rgba(125, 211, 252, .13);
+}
+
+.project-input-label input[aria-invalid="true"],
+.project-input-label textarea[aria-invalid="true"] {
+    border-color: #fb7185;
+}
+
+.project-input-label input[type="file"] {
+    padding: 9px;
+    font-size: 12px;
+}
+
+.project-image-field {
+    align-content: start;
+}
+
+.project-description-field {
+    grid-column: 1 / -1;
+}
+
+.field-error {
+    color: #fda4af !important;
+    font-family: var(--sans);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.project-editor-page .project-image-preview-wrap {
+    min-height: 116px;
+    border-color: rgba(200, 220, 245, .2);
+    border-radius: 8px;
+    color: #8d9ab0;
+    font-family: var(--mono);
+    font-size: 11px;
+}
+
+.project-editor-page .project-image-preview-wrap p {
+    margin: 0;
+}
+
+.project-editor-page #project-image-preview {
+    max-height: 250px;
+    border-radius: 5px;
+}
+
+.project-editor-page .project-form-actions {
+    align-items: center;
+}
+
+.project-editor-page .button-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 18px;
+    border: 1px solid rgba(232, 238, 248, .24);
+    border-radius: 7px;
+    color: #dbeafe;
+}
+
+.project-editor-page .button-primary {
+    min-height: 44px;
+}
+
+.project-editor-page button:disabled {
+    cursor: wait;
+    opacity: .7;
+}
+
+.project-confirm-backdrop {
+    position: fixed;
+    z-index: 50;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: rgba(2, 8, 18, .76);
+    backdrop-filter: blur(8px);
+}
+
+.project-confirm-dialog {
+    width: min(480px, 100%);
+    padding: clamp(24px, 5vw, 40px);
+    border: 1px solid rgba(125, 211, 252, .2);
+    border-radius: 12px;
+    background: #101a2b;
+    box-shadow: 0 28px 90px rgba(0, 0, 0, .46);
+}
+
+.project-confirm-dialog h2 {
+    margin: 10px 0;
+    font-size: clamp(25px, 4vw, 34px);
+    letter-spacing: -.04em;
+}
+
+.project-confirm-dialog p {
+    margin: 0 0 24px;
+    color: #aab7ca;
+    line-height: 1.6;
+}
+
+.danger-button {
+    background: #fb7185;
+    color: #160b12;
+}
+
+.danger-button:hover {
+    background: #fda4af;
+}
+
+.project-action-btn {
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.project-action-btn:focus-visible,
+.button:focus-visible,
+.header-cta:focus-visible,
+.desktop-nav a:focus-visible,
+.text-link:focus-visible {
+    outline: 2px solid var(--acid);
+    outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+    .project-admin-shell {
+        padding-inline: 20px;
+    }
+
+    .project-manager-header,
+    .project-admin-page-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .project-admin-grid,
+    .project-admin-page .project-form-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .project-description-field {
+        grid-column: auto;
+    }
+
+    .project-editor-page .project-form-actions,
+    .project-confirm-dialog .project-form-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .project-editor-page .project-form-actions > *,
+    .project-confirm-dialog .project-form-actions > * {
+        width: 100%;
+    }
+}
